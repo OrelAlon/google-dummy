@@ -1,7 +1,22 @@
-.video-flex {
+.search-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.search-video {
 }
 .video {
   padding: 8px;
+}
+.search-results {
+}
+.p-img {
+  width: 136px;
+  word-break: break-all;
+  /* overflow-wrap: break-word; */
+  text-decoration: none;
+  color: black;
+  margin-top: 2px;
 }

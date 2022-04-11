@@ -21,14 +21,14 @@ const Results = () => {
   switch (location.pathname) {
     case "/search":
       return (
-        <div>
+        <div className="search-results search-box">
           {results?.results?.map(({ link, title }, index) => (
             <div key={index}>
               <a href={link} target="_blank" rel="noreferrer">
                 <p className="text-sm">
                   {link.length > 30 ? link.substring(0, 30) : link}
                 </p>
-                <p>{title}</p>
+                <a className="p-img">{title}</a>
               </a>
             </div>
           ))}
@@ -36,12 +36,12 @@ const Results = () => {
       );
     case "/image":
       return (
-        <div>
+        <div className="search-box">
           {results?.image_results?.map(
             ({ image, link: { href, title } }, index) => (
               <a href={href} target="_blank" key={index} rel="noreferrer">
                 <img src={image?.src} alt={title} loading="lazy" />
-                <p>{title}</p>
+                <nav className="p-img">{title}</nav>
               </a>
             )
           )}
@@ -49,7 +49,7 @@ const Results = () => {
       );
     case "/news":
       return (
-        <div>
+        <div className="search-box">
           {results?.entries?.map(({ id, links, source, title }) => (
             <div key={id}>
               <a href={links?.[0].href} target="_blank" rel="noreferrer ">
@@ -67,7 +67,7 @@ const Results = () => {
       );
     case "/video":
       return (
-        <div className="video-flex ">
+        <div className="search-video search-box ">
           {results?.results?.map((video, index) => (
             <div key={index} className="video">
               {video?.additional_links?.[0]?.href && (
