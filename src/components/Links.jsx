@@ -13,7 +13,7 @@ const Links = ({ darkTheme }) => {
   return (
     <div className={darkTheme ? "dark links" : "white links"}>
       {links.map(({ url, text }) => (
-        <NavLink className="nav-links" to={url}>
+        <NavLink key={text} className="nav-links" to={url}>
           {text}
         </NavLink>
       ))}

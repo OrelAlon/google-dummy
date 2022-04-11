@@ -9,7 +9,7 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
     <div className="navbar">
       <div className="nav-links">
         <Link to="/" className={darkTheme ? "dark link" : "white link"}>
-          <p>Goog-el 🔎</p>
+          <p>Goog-EL 🔎</p>
         </Link>
         <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
           {darkTheme ? "Light 💡" : "Dark 💻"}
