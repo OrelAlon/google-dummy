@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Navbar from "./components/Navbar";
+import RoutesTo from "./components/RoutesTo";
+import Footer from "./components/Footer";
+
+import "./App.css";
 
 function App() {
+  const [darkTheme, setDarkTheme] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkTheme ? "dark App" : "white App"}>
+      <div className="App-header">
+        <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+        <RoutesTo />
+        <Footer />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// rfce
+// rafce

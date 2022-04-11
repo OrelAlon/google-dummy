@@ -1,0 +1,27 @@
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  align-items: center;
+  max-width: 55%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #282c34;
+}
+.nav-links:active {
+  color: blue;
+  /* border-bottom: 2px solid rgb(189, 187, 187); */
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .links {
+    max-width: 100%;
+  }
+}

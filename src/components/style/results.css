@@ -1,0 +1,7 @@
+.video-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video {
+  padding: 8px;
+}
