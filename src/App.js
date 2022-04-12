@@ -24,3 +24,4 @@ export default App;
 
 // rfce
 // rafce
+// npm start
