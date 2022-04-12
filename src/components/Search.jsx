@@ -6,7 +6,7 @@ import Links from "./Links";
 import "./style/search.css";
 
 const Search = () => {
-  const [text, setText] = useState("romeo santos");
+  const [text, setText] = useState("");
   const { setSearchTerm } = useResultContext();
   const [value] = useDebounce(text, 500);
 
@@ -23,7 +23,7 @@ const Search = () => {
         placeholder="What's on your mind...."
         onChange={(e) => setText(e.target.value)}
       />
-      {!text && (
+      {text && (
         <button type="button" className="btn" onClick={() => setText("")}>
           X
         </button>

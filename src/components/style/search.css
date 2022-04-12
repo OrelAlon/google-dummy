@@ -17,3 +17,14 @@
 .search-input:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+.btn {
+  border-radius: 9999px;
+  background-color: rgb(218, 215, 215);
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: gray;
+}
+.btn:active {
+  transform: translateY(2px);
+}

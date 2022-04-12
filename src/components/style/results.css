@@ -11,12 +11,17 @@
   padding: 8px;
 }
 .search-results {
+  text-decoration: none;
 }
-.p-img {
+.title {
   width: 136px;
   word-break: break-all;
   /* overflow-wrap: break-word; */
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
   margin-top: 2px;
+  text-decoration: solid 2px red;
+}
+.img-box {
+  margin: 20px;
 }

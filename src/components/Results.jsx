@@ -28,7 +28,7 @@ const Results = () => {
                 <p className="text-sm">
                   {link.length > 30 ? link.substring(0, 30) : link}
                 </p>
-                <a className="p-img">{title}</a>
+                <afterEach className="title">{title}</afterEach>
               </a>
             </div>
           ))}
@@ -36,12 +36,12 @@ const Results = () => {
       );
     case "/image":
       return (
-        <div className="search-box">
+        <div className="search-box img-box">
           {results?.image_results?.map(
             ({ image, link: { href, title } }, index) => (
               <a href={href} target="_blank" key={index} rel="noreferrer">
                 <img src={image?.src} alt={title} loading="lazy" />
-                <nav className="p-img">{title}</nav>
+                <nav className="title">{title}</nav>
               </a>
             )
           )}
