@@ -22,6 +22,7 @@ function App() {
 
 export default App;
 
+// for test:
 // rfce
 // rafce
 // npm start
